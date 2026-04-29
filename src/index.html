@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tauri App</title>
+    <script type="module" src="./main.js" defer></script>
+</head>
+
+<body>
+<main class="container mx-auto h-screen flex flex-col overflow-hidden">
+
+    <h1 class="text-2xl text-center pt-4">Fast Reading</h1>
+
+    <div class="flex-1 flex items-center justify-center p-4">
+        <p id="text" class="text-[31px] text-center leading-tight">Default text</p>
+    </div>
+
+    <div id="settings" class="flex flex-col items-center border-t py-4 bg-white">
+
+        <!-- speed -->
+        <div class="flex items-center gap-4 mb-2">
+            <label class="flex flex-col">
+                <span class="text-xs text-gray-500 text-center text-nowrap">Vitesse (Curseur)</span>
+                <input id="text-speed" type="range" min="0" max="10" step="0.01">
+            </label>
+            <label class="flex flex-col">
+                <span class="text-xs text-gray-500 text-center text-nowrap">WPM (Manuel)</span>
+                <input id="wpm-input" type="number" class="w-20 border rounded px-1 text-center font-bold" min="10">
+            </label>
+        </div>
+
+        <!-- Settings to change word size and count -->
+        <div class="flex items-center gap-6 mb-4">
+            <label class="flex flex-col items-center">
+                <span class="text-xs text-gray-500">Taille</span>
+                <div class="flex items-center gap-2">
+                    <input id="text-size" type="range" min="8" max="150">
+                    <input id="text-size-input" type="number" class="w-14 border rounded text-center" min="8">
+                </div>
+            </label>
+
+            <label class="flex flex-col items-center">
+                <span class="text-xs text-gray-500">Mots par bloc</span>
+                <input id="word-count" type="number" min="1" max="10" value="1"
+                       class="border rounded px-1 w-12 text-center">
+            </label>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex gap-4">
+            <button id="load_text_btn"
+                    class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors">Load
+                Text
+            </button>
+            <button id="play_btn"
+                    class="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors">
+                Play
+            </button>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
