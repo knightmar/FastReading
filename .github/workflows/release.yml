@@ -34,7 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }}
-          releaseName: 'App v__VERSION__'
-          releaseBody: 'Release auto-générée.'
+          releaseName: 'FastReader v__VERSION__'
+          releaseBody: 'Release github actions'
           releaseDraft: true
           prerelease: false
