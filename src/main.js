@@ -49,7 +49,7 @@ function updateAllSpeeds(source) {
     else if (source === 'input') {
         current_wpm = parseInt(wpm_input.value) || 10;
         const sliderVal = Math.log(current_wpm / 50) / Math.log(1.4);
-        text_speed_slider.value = Math.max(0, Math.min(10, sliderVal));
+        text_speed_slider.value = Math.max(0, Math.min(11, sliderVal));
     }
 
     text_speed = (60000 * word_chunks) / current_wpm;
