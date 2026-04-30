@@ -1,7 +1,16 @@
-# Tauri + Vanilla
+# Fast Reader
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+This quick project is made out for those who want to improve their reading speed.
 
-## Recommended IDE Setup
+## How to use
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Get an installer in [Release](https://github.com/knightmar/FastReading/releases) and execute it.
+Once the installer is done, just run the installed executable.
+
+## Issues
+
+Please report any issues using the corresponding tab in github
+
+## Copyright (c) 2026 knightmar
+
+You can use the code as long as you credit me, and you don't make money out of it
